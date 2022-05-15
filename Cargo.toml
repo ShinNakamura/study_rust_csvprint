@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 csv = "1.1"
+assert_cmd = "2"
+# predicates = "2"
