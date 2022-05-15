@@ -34,7 +34,7 @@ AND I'M FUNKY",1042
 John "BE" Constantine
 <!-- COLUMN END   name -->
 <!-- COLUMN BEGIN age -->
-15
+39
 <!-- COLUMN END   age -->
 <!-- RECORD END   1 -->
 <!-- RECORD BEGIN 2 -->
