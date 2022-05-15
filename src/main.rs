@@ -1,3 +1,8 @@
+use std::process;
+
 fn main() {
-    println!("Hello, world!");
+    if let Err(e) = csvprint::run() {
+        eprintln!("{}", e);
+        process::exit(1);
+    }
 }
