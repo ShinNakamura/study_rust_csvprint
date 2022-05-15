@@ -1,5 +1,9 @@
 # csvprint
 
+Rust 学習中の練習用リポジトリ
+
+## 概要
+
 ヘッダーありCSVを標準入力から読んで、
 標準出力へ次のフォーマットで表示する。
 
@@ -12,7 +16,9 @@
 ...
 ```
 
-例 :
+## 例
+
+元のCSVが下記だとすると…
 ```csv
 name,age
 "John ""BE"" Constantine",39
@@ -20,6 +26,7 @@ name,age
 <b>PRINCE</b>
 AND I'M FUNKY",1042
 ```
+次のように出力
 ↓
 ```txt
 <!-- RECORD BEGIN 1 -->
