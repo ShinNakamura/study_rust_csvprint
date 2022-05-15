@@ -56,3 +56,26 @@ AND I'M FUNKY
 <!-- COLUMN END   age -->
 <!-- RECORD END   2 -->
 ```
+
+## 参考
+
+### testの書き方。main.rc, lib.rc をわける
+
+Command-Line Rust
+https://amzn.to/38msbql
+
+### csv
+
+【翻訳】RustとCSV解析
+https://qiita.com/algebroid/items/c456d4ec555ae04c7f92
+
+Crate csv
+https://docs.rs/csv/latest/csv/
+
+### io
+
+RustのファイルI/OにはBufReader, BufWriterを使いましょう、という話
+https://qiita.com/gyu-don/items/50f4239fc856bed00dc4
+
+Rustで高速な標準出力
+https://keens.github.io/blog/2017/10/05/rustdekousokunahyoujunshutsuryoku/
