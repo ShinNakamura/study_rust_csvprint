@@ -1,15 +1,17 @@
 use std::error::Error;
-use std::io;
-use std::io::Write;
+use std::io::{self, Write};
 use std::collections::HashMap;
+use csv;
 
 type MyResult = Result<(), Box<dyn Error>>;
 type Record = HashMap<String, String>;
 
 pub fn run() -> MyResult {
-    let input = io::BufReader::new(io::stdin());
+    let input = io::stdin();
+    let input = io::BufReader::new(input.lock());
     let mut rdr = csv::Reader::from_reader(input);
-    let mut wtr = io::BufWriter::new(io::stdout());
+    let out = io::stdout();
+    let mut wtr = io::BufWriter::new(out.lock());
     // ヘッダーの順番を守る
     let header = rdr.headers()?.clone();
     let mut rec_n = 0;
