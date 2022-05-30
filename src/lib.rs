@@ -29,5 +29,6 @@ pub fn run() -> MyResult {
         }
         writeln!(wtr, "<!-- RECORD END   {} -->", rec_n)?;
     }
+    wtr.flush()?;
     Ok(())
 }
